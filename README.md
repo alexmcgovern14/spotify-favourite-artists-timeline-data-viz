@@ -5,6 +5,8 @@
 This project creates a timeline data visualisation that shows a user’s top Spotify artists, plotting their active years based on MusicBrainz studio album data. Users can view the years/musical eras they listen to most through a timeline within Looker Studio.
 
 Looker Studio link: [view top artists timeline](https://lookerstudio.google.com/reporting/6d57ae49-1e7e-4f4d-8bdb-652eba24086b)
+![Sample Data Visualization](timeline_data_viz.png)
+
 
 ## Key features
 

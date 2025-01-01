@@ -2,11 +2,11 @@
 
 ## Project overview
 
-This project creates a timeline data visualisation that shows a user’s top Spotify artists, plotting their active years based on MusicBrainz studio album data. Users can view the years/musical eras they listen to most through a timeline within Looker Studio.
+This project creates a data visualisation that shows user’s favourite artists on a timeline, user to view the years/musical eras they listen to most. User's top 100 artists are extracted from Spotify API and mapped to MusicBrainz studio album data to determine active years.
 
 Looker Studio link: [view top artists timeline](https://lookerstudio.google.com/reporting/6d57ae49-1e7e-4f4d-8bdb-652eba24086b)
-![Sample Data Visualization](timeline_data_viz.png)
 
+![Sample Data Visualization](timeline_data_viz.png)
 
 ## Key features
 
@@ -28,10 +28,10 @@ Looker Studio link: [view top artists timeline](https://lookerstudio.google.com/
 
 | Problem | Solution |
 | ------- | -------- |
-| Limited Python experience. | Leveraged AI tools (e.g., ChatGPT, Perplexity Pro) to write and debug scripts. |
 | Spotify API does not distinguish between studio albums and other types, therefore The Beatles' active years would appear as 1963-2024, rather than 1963-1970. | MusicBrainz dataset distinguishes studio albums from compilations, re-releases and live records. Available via download or API |
 | Linking Spotify artist IDs to MusicBrainz artist IDs (MBID). | MusicBrainz dataset contains plethora of external URLs including artist’s website, social media channels and “free streaming” parameter. Spotify URL contains artist’s Spotify ID after /artist/, therefore this can be extracted and used to associate Spotify ID with MusicBrainz dataset: https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9 |
 | Handling large datasets (MusicBrainz database ~400MB) on a free BigQuery account. | Managed dataset with targeted MusicBrainz API calls to avoid large-scale file processing locally. |
+| Limited Python experience. | Leveraged AI tools (e.g., ChatGPT, Perplexity Pro) to write and debug scripts. |
 
 ## Project Files
 

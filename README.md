@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This project creates a data visualisation that shows user’s favourite artists on a timeline, allowing user to understand the years/musical eras they listen to most. User's top 100 artists are extracted from Spotify API and mapped to MusicBrainz studio album data to determine active years.
+This project creates a data visualisation that shows user’s favourite artists' active years on a timeline, allowing user to understand the years/musical eras they listen to most. User's top 100 artists are extracted from Spotify API and mapped to MusicBrainz API studio album data — whilst omitting re-releases, compilations and studio albums — to determine active years. 
 
 Looker Studio link: [view top artists timeline](https://lookerstudio.google.com/reporting/6d57ae49-1e7e-4f4d-8bdb-652eba24086b)
 
@@ -10,8 +10,9 @@ Looker Studio link: [view top artists timeline](https://lookerstudio.google.com/
 
 ## Key features
 
-- Extracts user’s top Spotify artists via the Spotify API.
-- Maps Spotify Artist IDs to MusicBrainz Artist IDs (MBID) to extract studio albums and enable definition of artists' active years.
+- Extracts user’s top Spotify artists via Spotify API.
+- Connects Spotify API data to MusicBrainz dataset by mapping Spotify artist ID to MusicBrainz ID (MBID) which are distinct identifiers.
+- Extracts studio albums (omits compilations, re-releases, live albums) from MusicBrainz API to enable definition of artists' active years.
 - Outputs a Gantt chart data visualisation of artists' active years using Looker Studio.
 
 ## Motivation

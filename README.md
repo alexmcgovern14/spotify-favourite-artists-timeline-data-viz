@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This project creates a data visualisation that shows user’s favourite artists on a timeline, user to view the years/musical eras they listen to most. User's top 100 artists are extracted from Spotify API and mapped to MusicBrainz studio album data to determine active years.
+This project creates a data visualisation that shows user’s favourite artists on a timeline, allowing user to understand the years/musical eras they listen to most. User's top 100 artists are extracted from Spotify API and mapped to MusicBrainz studio album data to determine active years.
 
 Looker Studio link: [view top artists timeline](https://lookerstudio.google.com/reporting/6d57ae49-1e7e-4f4d-8bdb-652eba24086b)
 
